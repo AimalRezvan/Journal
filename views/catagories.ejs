@@ -1,0 +1,15 @@
+<%-include("partials/header")-%>
+
+    <div class="single-catagory">
+        <h2 class="text-center"><%=catagory.name%></h2>
+        <div class="flex-row">
+            <% catagory.topicList.forEach(function(topic){ %>
+                <div class="white-box">
+                    <h5 class="green-back"><a href= <%='/'+catagory.name+'-'+ topic.title %> ><%=topic.title%></a></h5>
+                    <p><%=topic.content%></p>
+                </div>
+            <% }); %>
+        </div>
+        
+    </div>
+<%- include("partials/footer")-%>

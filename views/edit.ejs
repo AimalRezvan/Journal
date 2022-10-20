@@ -1,0 +1,20 @@
+<%- include ("partials/header")-%>
+
+<form class="container" action= <%= "/save!" + catagory+ "-" + topic.title %> method="post">
+    <div class="sub-container">
+        <h3><span>Catagory :</span>  <%=catagory%></h3>
+    </div>
+
+    <div class="sub-container">
+        <h5><span>Title :</span> <%=topic.title%></h5>  
+    </div>
+     
+    <div class="sub-container">
+        <textarea name="content" rows="8" cols="80" class="noOutline" 
+        > <%=""+topic.content %></textarea>
+    </div>
+
+    <input type="submit" id="editSubmit", class="btn button btn-success" value="Save">
+</form>
+
+<%-include("partials/footer")-%>

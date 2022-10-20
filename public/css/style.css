@@ -1,0 +1,199 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: #f5f8f5
+}
+
+a{
+  color: inherit;
+}
+
+a:hover{
+  text-decoration:none;
+  color: #0d430d;
+}
+
+.title a:hover{
+  text-decoration: underline;
+}
+
+
+.navbar{
+  padding: 10px 20px;
+  background-color: #00b000;
+
+}
+
+.navbar a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar a:link{
+  color: #fff;
+  background-color: #00b300;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.btn{
+  background-color: #00b000;
+}
+
+.container{
+  width: 80%;
+  margin: auto;
+  padding: 10px 20px;
+  padding-top: 40px;
+}
+
+.sub-container{
+  margin-bottom: 15px;
+}
+
+.container label{
+  display: block;
+}
+
+.container input{
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.container textarea{
+  width: 100%;
+  padding: 40px;
+  font-size: 16px;
+  height: 600px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+
+}
+
+.direction{
+  background-color: #00b000;
+}
+
+.noOutline:focus{
+  outline: none;
+}
+
+
+.button{
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  color: white;
+  background-color: #00b000;
+}
+
+.flex-row{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+
+.white-box{
+  min-width: 300px;
+  height: 300px;
+  text-align: center;
+  margin: 20px;
+  margin-top: 40px;
+  padding: 0;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.white-box p{
+  text-align: left;
+  padding: 5px;
+  margin: 0 5px;
+}
+
+.topic-list{
+  padding: 40px;
+}
+
+.green-back{
+  margin-bottom: 20px;
+  background-color: #00b300;
+  color: white;
+  width: 100%;
+  padding: 12px 5px;
+  border-radius: 5px;
+}
+
+.single-catagory h2{
+  margin: 30px 0 40px 0;
+}
+
+
+
+.topic{
+  margin-top: 40px;
+  background-color: #fff;
+  padding: 50px 50px;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: +2px +2px 5px rgba(0, 0, 0, 0.3);
+
+}
+
+.sub-container{
+  padding-bottom: 30px;
+  position: relative;
+}
+
+.error{
+  display: block;
+  color: red;
+  position: absolute;
+  bottom: 0px;
+}
+
+.topic .button{
+  padding: 4px 12px;
+  border-radius: 100%;
+  font-size: 20px;
+  
+  transform: rotate(45deg);
+  text-align: center;
+  color: white;
+}
+
+.topic .button.edit{
+  transform: rotate(0);
+  margin-right: 5px;
+}
+
+.topic #top-corner{
+  position: absolute;
+  top: 7px;
+  right: 12px;
+  display: flex;
+}
+
+.topic .button:hover{
+  cursor: pointer;
+}
+
+a:not([href]):not([tabindex]) {
+  color: white;
+  text-decoration: none;
+}
+
+.sub-container span{
+  color: grey;
+  margin-right: 5px;
+}

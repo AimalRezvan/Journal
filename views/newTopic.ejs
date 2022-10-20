@@ -1,0 +1,28 @@
+<%-include("partials/header")-%>
+
+  <form class="container" action="/newTopic" method="post">
+
+    <div class="sub-container">
+      <label for="catagory">Catagory</label>
+      <input type="text" name="catagory" class="noOutline" autocomplete="off">
+    </div>
+
+    <div class="sub-container">
+      <label for="title">Title</label>
+      <input type="text" name="title" class="noOutline" autocomplete="off">
+      <span class="error"><%=errorText%></span>
+    </div>
+
+    <div class="sub-container">
+      <label for="content">Content</label>
+      <div class="direction flex-row">
+        <button type="button" class=" btn button direction-button">|&gt;</button>
+        <button type="button" class=" btn button direction-button">&lt;|</button>
+      </div>
+      <textarea name="content" rows="8" cols="80" class="noOutline" dir="ltr"></textarea>
+    </div>
+
+    <button type="submit" id="button" class="btn btn-success button">Save</button>
+  </form>
+
+<%-include("partials/footer")-%>

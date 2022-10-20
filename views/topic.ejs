@@ -1,0 +1,14 @@
+<%-include("partials/header")-%>
+
+    <div class="topic">
+        <h5><%=theTopic.title%></h5>
+        <p><%=theTopic.content%></p>
+        <div id="top-corner">
+            <a id="edit" class="button btn-danger edit"
+             href= <%= "/edit!"+ catagory + "!" + theTopic.title %> >Edit</a>
+            <a id="deleteItem" class="button btn-danger">+</a>
+        </div>
+        
+    </div>
+
+<%-include("partials/footer")-%>

@@ -1,0 +1,19 @@
+<%-include("partials/header")-%>
+
+    <div class="flex-row">
+        <% catagories.forEach(function(catagory){ %>
+            <div class="white-box">
+                <h3 class="green-back"><a href= <%= '/'+catagory.name+'-+page' %> ><%=catagory.name%></a></h3>
+                
+                <div class="topicList">
+                    <% catagory.topicList.forEach(function(topic){ %>
+                        <div class="title"><a href=<%= '/'+catagory.name +'-'+ topic.title %> ><%=topic.title%></a></div>
+                        <hr>
+                    <% }) %> 
+                </div>
+            </div>
+        <% }) %>
+    </div>
+    
+    
+<%-include("partials/footer")-%>
